@@ -1,12 +1,22 @@
-import React from 'react'
+import axios from 'axios'
+import Reactm, { useEffect } from 'react'
+import Header from './components/Header'
+import Fotter from './components/Fotter'
 
 const App = () => {
+  useEffect(() => {
+    const fetchData = async () => {
+
+      const response = await axios.get("https://internshala.com/hiring/search")
+      console.log(response.data)
+    }
+
+    fetchData()
+  })
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-red-600 mb-4">Hello</h1>
-        <p className="text-gray-600">Welcome to your React + Tailwind project!</p>
-      </div>
+    <div >
+      <Header/>
+      <Fotter/>
     </div>
   )
 }
