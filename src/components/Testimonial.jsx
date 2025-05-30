@@ -34,7 +34,9 @@ const renderStars = (rating) => {
   }
 
   if (hasHalfStar) {
-    stars.push(<img key="half" src={halfStar} alt="half star" className="w-4 h-4" />);
+    stars.push(
+      <img key="half" src={halfStar} alt="half star" className="w-4 h-4" />
+    );
   }
 
   while (stars.length < 5) {
@@ -54,11 +56,12 @@ const Testimonial = () => {
   return (
     <div className="bg-[#EEF6FF] px-4 sm:px-6 md:px-20 lg:px-40 py-12 sm:py-16">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
-
         <div className="flex-1">
           <div className="text-3xl sm:text-4xl mb-4 font-semibold text-gray-800">
             <div className="text-5xl text-[#1DA1F2] leading-none">“</div>
-            <p className="mt-2">Join the pool of 21Mn+ students and get started with your career</p>
+            <p className="mt-2">
+              Join the pool of 21Mn+ students and get started with your career
+            </p>
           </div>
           <p className="mt-6 text-xs sm:text-sm text-gray-600 uppercase font-medium">
             Play Store Ratings
@@ -68,7 +71,6 @@ const Testimonial = () => {
             <div className="flex gap-1">{renderStars(4.2)}</div>
             <span className="text-sm text-gray-600">(39K Reviews)</span>
           </div>
-
 
           <button
             className="mt-6"
@@ -82,7 +84,6 @@ const Testimonial = () => {
           </button>
         </div>
 
-
         <div className="flex-1 w-full overflow-x-auto no-scrollbar">
           <div className="flex gap-4 sm:gap-6 md:gap-6 w-max md:w-full snap-x snap-mandatory">
             {testimonials.map((item, index) => (
@@ -95,7 +96,9 @@ const Testimonial = () => {
                     ? "I landed a job at Amazon"
                     : "Must-have app for students"}
                 </p>
-                <p className="text-gray-700 text-sm sm:text-base mb-4">{item.text}</p>
+                <p className="text-gray-700 text-sm sm:text-base mb-4">
+                  {item.text}
+                </p>
                 <div className="flex items-center gap-3 mt-auto">
                   <img
                     src={item.image}

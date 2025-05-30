@@ -1,5 +1,8 @@
 import React from "react";
 import { useInternships } from "./InternshipContext";
+import location from "../assets/location.png";
+import salary from "../assets/salary.png";
+import time from "../assets/date.png";
 
 const Internship = () => {
   const { filteredInternships } = useInternships();
@@ -14,13 +17,31 @@ const Internship = () => {
           <h2 className="text-md font-semibold text-black">{item.title}</h2>
           <p className="text-gray-500 mt-1">{item.company_name}</p>
           <div className="flex mt-2 text-sm gap-5 mb-2 text-gray-600 space-y-1 items-center flex-wrap">
-            {item.location_names && <p>{item.location_names}</p>}
-            {item.stipend.salary && <p>{item.stipend.salary}</p>}
-            {item.duration && <p>{item.duration}</p>}
+            {item.location_names && (
+              <p className="flex items-center gap-1">
+                {" "}
+                <img src={location} alt="location" className="w-4 h-4" />
+                {item.location_names}
+              </p>
+            )}
+            {item.stipend.salary && (
+              <p className="flex items-center gap-1">
+                <img src={salary} alt="salary" className="w-4 h-4" />
+                {item.stipend.salary}
+              </p>
+            )}
+            {item.duration && (
+              <p className="flex items-center gap-1">
+                <img src={time} alt="duration" className="w-4 h-4" />
+                {item.duration}
+              </p>
+            )}
           </div>
           {item.posted_by_label && (
             <p className="border px-4 w-28 rounded-xl bg-green-500">
-              <span className="font-thin text-sm text-white">{item.posted_by_label}</span>
+              <span className="font-thin text-sm text-white">
+                {item.posted_by_label}
+              </span>
             </p>
           )}
         </div>

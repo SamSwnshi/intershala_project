@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import up from "../assets/up.png";
 import down from "../assets/down.png";
-import { useInternships } from "../components/InternshipContext"; 
+import { useInternships } from "../components/InternshipContext";
 
 const SearchTab = () => {
   const [showMoreFilters, setShowMoreFilters] = useState(false);
@@ -20,7 +20,6 @@ const SearchTab = () => {
     setShowMoreFilters((prev) => !prev);
   };
 
-
   useEffect(() => {
     filterInternships({
       profile,
@@ -35,14 +34,12 @@ const SearchTab = () => {
 
   return (
     <div className="flex flex-col gap-6 items-center">
- 
       <div className="border w-[384px] bg-white rounded-md px-5 py-6 shadow-sm">
         <h1 className="text-base font-semibold text-gray-800 mb-4 text-center">
           Filters
         </h1>
 
         <div className="flex flex-col gap-4">
-
           <label className="flex flex-col text-sm text-gray-700 font-medium">
             Profile
             <input
@@ -54,7 +51,6 @@ const SearchTab = () => {
             />
           </label>
 
-
           <label className="flex flex-col text-sm text-gray-700 font-medium">
             Location
             <input
@@ -65,7 +61,6 @@ const SearchTab = () => {
               className="mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
             />
           </label>
-
 
           <div className="flex flex-col gap-2 text-sm text-gray-700">
             <label className="flex items-center gap-2">
@@ -87,7 +82,6 @@ const SearchTab = () => {
               Part-time
             </label>
           </div>
-
 
           <div className="text-sm text-gray-700">
             <label className="font-medium">
@@ -112,7 +106,6 @@ const SearchTab = () => {
             </div>
           </div>
 
-
           <div
             onClick={toggleFilters}
             className="flex justify-between text-center items-center text-sm text-blue-600 cursor-pointer mt-2"
@@ -129,7 +122,6 @@ const SearchTab = () => {
             </div>
           </div>
 
-
           {showMoreFilters && (
             <div className="flex flex-col gap-4 mt-2">
               <label className="flex flex-col text-sm text-gray-700 font-medium">
@@ -137,7 +129,6 @@ const SearchTab = () => {
                 <input
                   type="date"
                   className="mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-
                 />
               </label>
 
@@ -173,7 +164,6 @@ const SearchTab = () => {
             </div>
           )}
 
-
           <div className="mt-4 flex justify-end">
             <button
               onClick={() => {
@@ -192,7 +182,6 @@ const SearchTab = () => {
           </div>
         </div>
       </div>
-
 
       <div className="border w-[384px] bg-white rounded-md px-5 py-6 shadow-sm mb-10">
         <h2 className="text-base font-semibold text-gray-800 mb-3 text-center">
