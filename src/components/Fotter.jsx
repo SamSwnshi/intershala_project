@@ -9,7 +9,7 @@ import linkdin from "../assets/linkedin-in-brands.svg";
 const Fotter = () => {
   return (
     <div className="tracking-wide bg-[#333333] text-white max-h-screen ">
-      <div className="flex items-center justify-between px-[15rem] py-10">
+      <div className="flex items-center justify-between px-[12rem] py-10">
         <div className="flex flex-col gap-1">
           <h3 className="mb-2 font-bold">Internships by places</h3>
           <p>Internship in India</p>
@@ -78,7 +78,7 @@ const Fotter = () => {
         </div>
       </div>
       <hr className="px-[15rem] mb-5 w-full items-center justify-center" />
-      <div className="flex items-center justify-between px-[15rem] mb-10">
+      <div className="flex items-center justify-between px-[12rem] mb-10">
         <div className="gap-1 flex flex-col">
           <p>About Us</p>
           <p>We're hiring</p>
@@ -105,14 +105,14 @@ const Fotter = () => {
         </div>
       </div>
 
-      <div className="px-[15rem] flex  justify-between">
+      <div className="px-[12rem] flex  justify-between">
         <div className="flex-start flex">
           <div className="flex gap-7 w-full">
             <img src={playstore} alt="playstore" className="w-45 h-[45px]" />
             <img src={applestore} alt="applestore" className="w-45 h-[45px]" />
           </div>
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5 items-center mb-20">
           <img
             src={insta}
             alt="applestore"

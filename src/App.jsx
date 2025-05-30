@@ -2,6 +2,7 @@ import axios from 'axios'
 import Reactm, { useEffect } from 'react'
 import Header from './components/Header'
 import Fotter from './components/Fotter'
+import Home from './components/Home'
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const App = () => {
   })
   return (
     <div >
-      <Header/>
+      <Header />
+      <Home/>
       <Fotter/>
     </div>
   )
