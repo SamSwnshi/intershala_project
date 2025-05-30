@@ -1,7 +1,7 @@
 import React from "react";
 import playstore from "../assets/google_play_store.png";
 import applestore from "../assets/apple_app_store.png";
-import insta from "../assets/instagram-brands-solid.svg";
+import insta from "../assets/instagram.png";
 import twitter from "../assets/twitter-brands.svg";
 import youtube from "../assets/youtube-brands.svg";
 import linkdin from "../assets/linkedin-in-brands.svg";
@@ -113,10 +113,10 @@ const Fotter = () => {
         </div>
 
         <div className="flex gap-5 items-center">
-          <img src={insta} alt="instagram" className="h-[30px] w-[30px] bg-white rounded-full" />
-          <img src={twitter} alt="twitter" className="h-[30px] w-[30px]" />
-          <img src={youtube} alt="youtube" className="h-[30px] w-[30px]" />
-          <img src={linkdin} alt="linkedin" className="h-[30px] w-[30px]" />
+          <img src={insta} alt="instagram" className="h-[30px] w-[30px]  hover:scale-110 duration-150" />
+          <img src={twitter} alt="twitter" className="h-[30px] w-[30px] hover:scale-110 duration-150" />
+          <img src={youtube} alt="youtube" className="h-[30px] w-[30px] hover:scale-110 duration-150" />
+          <img src={linkdin} alt="linkedin" className="h-[30px] w-[30px] hover:scale-110 duration-150" />
         </div>
 
         <div className="text-center text-sm">
