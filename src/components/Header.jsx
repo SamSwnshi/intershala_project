@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex w-full px-[12rem] py-6 border shadow-md justify-between">
+    <div className="flex w-full px-[12rem] py-6 border shadow-md justify-between  bg-[#FFFFFF]">
       <div>
         <p>Internshala</p>
       </div>
